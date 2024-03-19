@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Inventory from './components/inventory.js';
 
 function App() {
+  const products=[
+    {pName:'Jars',pQuantity:"30",pType:"Raw"},
+    {pName:'Lids',pQuantity:"30",pType:"Raw"},
+    {pName:'Labels',pQuantity:"500",pType:"Raw"},
+    {pName:'biscotti',pQuantity:"2",pType:"Flower"},
+    {pName:'Hawiian',pQuantity:"4",pType:"Flower"},
+    {pName:'P Haze',pQuantity:"5",pType:"Flower"}
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Inventory inventory= {products}/>    
     </div>
   );
 }
