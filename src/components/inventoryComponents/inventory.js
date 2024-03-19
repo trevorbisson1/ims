@@ -1,5 +1,5 @@
 import React from "react";
-import Grouping from "./groupings";
+import Grouping from "./Groupings";
 
 function Inventory(props) {
     //Variable for pasing the correct items to the groupings component

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Inventory from './components/inventoryComponents/inventory.js';
+import Inventory from './components/InventoryComponents/Inventory.js';
 
 function App() {
   const products=[
