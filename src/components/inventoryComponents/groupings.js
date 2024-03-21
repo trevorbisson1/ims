@@ -3,7 +3,7 @@ import Item from './Item'
 
 function Grouping(props) {
     return (
-        <div> 
+        <div className="Grouoping"> 
             <h1>{props.group[0].pType}</h1>
             {
                 props.group.map((item,index)=>{
