@@ -1,9 +1,12 @@
 import React from 'react';
+import { Routes,Route } from 'react-router-dom';
+
 import './App.css';
 import Inventory from './components/InventoryComponents/Inventory.js';
 import Landing from './components/Landing/Landing.js';
 import Navigation from './components/Navigation/Navigvation.js';
-import { Routes,Route } from 'react-router-dom';
+import AddIngredientForm from './components/AddComponents/AddIngredientForm.js';
+import AddProductForm from './components/AddComponents/AddProductForm.js';
 
 function App() {
   const products=[
@@ -23,6 +26,8 @@ function App() {
         <Routes>
             <Route path='/' element={<Landing/>}/>
             <Route path='/Inventory' element={<Inventory inventory={products}/>}/>
+            <Route path='/AddProduct' element={<AddProductForm/>}/>
+            <Route path='/AddIngredient' element={<AddIngredientForm/>}/>
         </Routes>    
     </div>
   );

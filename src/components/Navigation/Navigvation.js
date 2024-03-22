@@ -8,6 +8,8 @@ function Navigation (props)
         <div className="Navigation">
             <NavLink to='/'> Home </NavLink>
             <NavLink to='/Inventory'> Inventory </NavLink>
+            <NavLink to='/AddProduct'> Add a Product </NavLink>
+            <NavLink to='/AddIngredient'> Add a Ingredients </NavLink>
         </div>
     )
 }
