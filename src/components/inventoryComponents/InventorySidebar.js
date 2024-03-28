@@ -3,6 +3,8 @@ import React from "react";
 import Inventory from "./Inventory";
 import "../../App.css"
 
+// This function needs to locate the inventory component on the page page, then
+// pass the props to the component where it will useEffect to update the function
 function InventoryLoader(id,group){
     console.log("printing"+JSON.stringify(id));
     return(
