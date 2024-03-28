@@ -4,6 +4,10 @@
 }
 
 .InventoryWrapper{
-    display: flexbox;
+    display: flex;
     flex-direction: row;
+}
+
+.InventorySidebar{
+    background-color: aqua;
 }
