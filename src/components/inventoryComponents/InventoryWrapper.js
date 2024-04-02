@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import InventorySidebar from "./InventorySidebar";
 import Inventory from "./Inventory";
@@ -8,7 +8,9 @@ import "../../App.css"
 
 function InventoryWrapper(props) {
 
-    
+    const [selectGroup,ChangeSelectedGroup] = useState(["FALSE"]);
+
+
     //Variable for pasing the correct items to the groupings component
     const groupings = [[props.InventoryWrapper[0]]];
     //flag for checking if a value was added to the groupings array
@@ -39,10 +41,11 @@ function InventoryWrapper(props) {
 
     }
 
+    console.log(JSON.stringify(selectGroup));
     return(
         <div className="InventoryWrapper">
-        <InventorySidebar InventorySidebar={groupings}/>
-        <Inventory/>
+        <InventorySidebar InventorySidebar={[groupings,ChangeSelectedGroup]}/>
+        <Inventory inventory={selectGroup}/>
         <CartSidebar/>
         </div>
     )
