@@ -1,15 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../../App.css";
 
 
 function Navigation (props)
 {
     return (
         <div className="Navigation">
-            <NavLink to='/'> Home </NavLink>
-            <NavLink to='/Inventory'> Inventory </NavLink>
-            <NavLink to='/AddProduct'> Add a Product </NavLink>
-            <NavLink to='/AddIngredient'> Add a Ingredients </NavLink>
+            <NavLink to='/' className="NavLink"> Home </NavLink>
+            <NavLink to='/Inventory' className="NavLink"> Inventory </NavLink>
+            <NavLink to='/AddProduct' className="NavLink"> Add a Product </NavLink>
+            <NavLink to='/AddIngredient' className="NavLink"> Add a Ingredients </NavLink>
         </div>
     )
 }

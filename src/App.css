@@ -11,3 +11,8 @@
 .InventorySidebar{
     background-color: aqua;
 }
+
+.NavLink{
+    text-decoration: none;
+    border-color: black;
+}
