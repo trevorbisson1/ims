@@ -12,7 +12,23 @@
     background-color: aqua;
 }
 
+.Navigation{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(78, 69, 147);
+}
+
 .NavLink{
     text-decoration: none;
+    color: black;
     border-color: black;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 1%;
+    margin:1%;
+    background-color: rgb(60, 111, 238);
+}
+
+.NavLink:hover{
+    background-color: rgb(54, 98, 209);
 }
