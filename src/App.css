@@ -9,13 +9,21 @@
 }
 
 .InventorySidebar{
-    background-color: aqua;
+    background-color: #5C6B73;
+    padding-left: 2.5%;
+    padding-right:2.5%
 }
 
+
+/*
+================================================
+=====NAVIGATION COMPONENTS SECTION==============
+================================================
+*/
 .Navigation{
     display: flex;
     justify-content: center;
-    background-color: rgb(78, 69, 147);
+    background-color: #253237;
 }
 
 .NavLink{
@@ -31,4 +39,13 @@
 
 .NavLink:hover{
     background-color: rgb(54, 98, 209);
+}
+
+
+
+/*
+Removing the outline from the initial page setting
+*/
+body{
+    margin:0;
 }
